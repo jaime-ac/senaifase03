@@ -1,0 +1,37 @@
+.container-produto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #000;
+    border-radius: 10px;
+    border-color: darkgray;
+    width: 200px;
+    height: 290px;
+    gap: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 3px;
+}
+    .container-produto:hover{
+        width: 210px;
+        height: 300px;
+    }
+
+.imagem-sapato{
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+}
+.preco-produto{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.descricao-produto{
+    font-size: 14px;
+}
+
+.promocao{
+    color: green;
+    font-size: 36px;
+}

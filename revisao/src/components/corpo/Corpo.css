@@ -1,0 +1,71 @@
+.container-corpo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    height: calc(100vh - 60px);
+    gap: 15px;
+}
+
+.div-pontos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 50px;
+}
+
+.botoes{
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    border: solid #000 1px;
+    cursor: pointer;
+}
+
+.div-produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+h2{
+    margin-top: 30px;
+}
+
+.lista-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.form-cadastro{
+    display: flex;
+    
+    gap: 10px;
+}
+
+.inputContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.botao-cadastrar{
+    height: 25px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkgreen;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
