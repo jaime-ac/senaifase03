@@ -5,7 +5,7 @@ function Cabecalho() {
 
     <div className="container-cabecalho">
 
-        <h1>Cabeçalho</h1>
+      <label className="label_titulo" htmlFor="">Cadastro de tênis</label>
 
     </div>
 

@@ -14,8 +14,10 @@
     padding: 3px;
 }
     .container-produto:hover{
-        width: 210px;
-        height: 300px;
+        width: 250px;
+        height: 350px;
+        border-radius: 15px;
+        border: solid 2px #222;
     }
 
 .imagem-sapato{

@@ -35,6 +35,20 @@ function Corpo() {
             marca: 'Air Jordan 3 Retro',
             preco: 1200,
             descricao: 'Posturado e Calmo'
+        },
+        {
+            id: Date.now()+4,
+            imagem: './public/air-jordan.png',
+            marca: 'Air Jordan Bel Air',
+            preco: 1500,
+            descricao: 'Um maluco no pedaço'
+        },
+        {
+            id: Date.now()+5,
+            imagem: './public/air-jordan-4.webp',
+            marca: 'Air Jordan 4',
+            preco: 1599,
+            descricao: 'Um estilo diferenciado'
         }
     ]);
 
@@ -78,7 +92,7 @@ function Corpo() {
 
     <div className='container-corpo'>
 
-        <h2>Loja Air Jordan</h2>
+        {/* <h2>Loja Air Jordan</h2> */}
 
         {/* <button className='botoes' onClick={clicou}>Clique aqui...</button>
 
@@ -93,13 +107,57 @@ function Corpo() {
 
         </div> */}
 
-        <div className='div-produtos'>
+        {/* <div className='div-produtos'>
 
-            {/* usando uma forma básica de listar produtos, chamando o componente e passando as informações através da desestruturação que fizemos na hora que substituimos os props no componente Produto */}
+            usando uma forma básica de listar produtos, chamando o componente e passando as informações através da desestruturação que fizemos na hora que substituimos os props no componente Produto
 
-            <Produto imagem={'./public/air-jordan.png'} marca={'Air Jordan Bel Air'} preco={2499} descricao={'Um Maluco do Pedaço'}/>
+            <Produto imagem={''} marca={''} preco={2499} descricao={'Um Maluco do Pedaço'}/>
             <Produto imagem={'./public/air-jordan-4.webp'} marca={'Air Jordan 4'} preco={1599} descricao={'Um Estilo Diferenciado'}/>
         
+        </div> */}
+
+        <div className='form-cadastro'>
+
+            <div className="inputContainer">
+
+                <label htmlFor="" className='label_tenis'>Imagem</label>
+                <input className='inputs' type='text' />
+
+            </div>
+
+            <div className="inputContainer">
+
+                <label htmlFor="" className='label_tenis'>Marca</label>
+
+                <input className='inputs' type="text" 
+                    value={inputMarca}
+                    onChange={(event) => setInputMarca(event.target.value)}
+                />
+
+            </div>
+
+            <div className="inputContainer">
+
+                <label htmlFor="" className='label_tenis'>Preço</label>
+                <input className='inputs' type="text" 
+                    value={inputPreco}
+                    onChange={(event) => setInputPreco(event.target.value)}
+                />
+
+            </div>
+
+            <div className="inputContainer">
+
+                <label htmlFor="" className='label_tenis'>Descrição</label>
+                <input className='inputs' type="text" 
+                    value={inputDescricao}
+                    onChange={(event) => setInputDescricao(event.target.value)}
+                />
+
+            </div>
+
+            <button className='botao-cadastrar' onClick={cadastrarTenis}>Cadastrar</button>
+
         </div>
 
         <div className='lista-cards'>
@@ -114,52 +172,7 @@ function Corpo() {
 
         </div>
 
-        <label htmlFor="">Cadastro de tênis</label>
 
-        <div className='form-cadastro'>
-
-
-            <div className="inputContainer">
-
-                <label htmlFor="">Imagem</label>
-                <input type='text' />
-
-            </div>
-
-            <div className="inputContainer">
-
-                <label htmlFor="">Marca</label>
-
-                <input type="text" 
-                    value={inputMarca}
-                    onChange={(event) => setInputMarca(event.target.value)}
-                />
-
-            </div>
-
-            <div className="inputContainer">
-
-                <label htmlFor="">Preço</label>
-                <input type="text" 
-                    value={inputPreco}
-                    onChange={(event) => setInputPreco(event.target.value)}
-                />
-
-            </div>
-
-            <div className="inputContainer">
-
-                <label htmlFor="">Descrição</label>
-                <input type="text" 
-                    value={inputDescricao}
-                    onChange={(event) => setInputDescricao(event.target.value)}
-                />
-
-            </div>
-
-            <button className='botao-cadastrar' onClick={cadastrarTenis}>Cadastrar</button>
-
-        </div>
 
     </div>
 

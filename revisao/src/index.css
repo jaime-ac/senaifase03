@@ -5,6 +5,6 @@
 }
 
 #root, body, html{
-  height: 100vh;
+  height: 100svh;
   background-color: whitesmoke;
 }

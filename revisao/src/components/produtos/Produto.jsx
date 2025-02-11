@@ -1,7 +1,6 @@
 import './Produto.css'
 import { ImAlarm } from "react-icons/im";
 
-
 // function Produto(props) {
 function Produto({imagem, marca, preco, descricao, estoque}) {
 
