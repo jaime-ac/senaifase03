@@ -1,0 +1,26 @@
+.container-app{
+    height: 100%;
+    width: 100%;
+}
+
+.parte-vermelho{
+    height: 100%;
+    width: 35%;
+    background-color: red;
+}
+
+.parte-direita{
+    height: 100%;
+    width: 65%;
+}
+    .parte-amarelo{
+        height: 50%;
+        width: 100%;
+        background-color: yellow;
+    }
+
+    .parte-verde{
+        height: 50%;
+        width: 100%;
+        background-color: green;
+    }

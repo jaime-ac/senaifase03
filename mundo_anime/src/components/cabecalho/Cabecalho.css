@@ -1,0 +1,33 @@
+.container-cabecalho{
+    height: 70px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+}
+
+    .parteEsquerda{
+        height: 100%;
+        width: 30%;
+        background-color: transparent;
+    }
+    .parteMeio{
+        height: 100%;
+        width: 60%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .parteDireita{
+        height: 100%;
+        width: 30%;
+        background-color: transparent;
+    }
+
+.titulo-cabecalho{
+    font-size: 70px;
+    font-weight: bolder;
+    font-family: cursive;
+    color: #fff;
+}

@@ -1,0 +1,23 @@
+Anotações:
+
+	SITE COM CURSOS GRATUITOS DO PROFESSOR RAFA: https://class.devsamurai.com.br/
+
+	é sempre bom definir o cabeçalho com tamanho fixo para evitar que ele fique mudando conforme a gente mexe na página, para isso, é sempre bom definir o seu tamanho em pixels e não em porcentagens;
+
+	O Ctrl + Espaço autocompleta o comando de importação;
+
+05/02/2025 - aula 2 - professor Rafa
+
+	posso usar variáveis direto ao invés de props.<nome da variável>, ou seja, posso desestruturar o props em nomes de variáveis:
+	
+	function Produto(props){
+		'uso de props'
+		<img src={props.imagem} >
+	}
+
+	function ({imagem, nome, marca, ...}){
+		'desestruturando os props usando apenas os nomes das variáveis'
+		<img src={imagem} >
+	}
+
+	=> o modo de chamar eles na página em que desejo continua o mesmo, a única forma que varia é o uso de props ou não para definir quais variáveis pretendo chamar.
