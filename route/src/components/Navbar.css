@@ -1,0 +1,22 @@
+/* Navbar */
+.navbar__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 60px;
+    width: 100%;
+    background-color: var(--cor-navbar);
+  }
+
+  .texto__navbar{
+    color: #fff;
+    text-decoration: inherit;
+    font-size: 25px;
+    font-weight: bold;
+  }
+    .texto__navbar:hover{
+      font-size: 35px;
+      color: var(--verde-escuro);
+      text-decoration: underline;
+    }

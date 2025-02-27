@@ -1,0 +1,22 @@
+/* Seletor Universal - Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root, body, html{
+  background-color: whitesmoke;
+  min-height: 100vh;
+}
+
+/* Minha paleta de cores */
+/* Link para gerar paletas de cores: https://coolors.co/ */
+/* CSS HEX */
+:root{
+  --cor-navbar: #dad7cdff;
+  --verde-clara: #a3b18aff;
+  --verde: #588157ff;
+  --verde-escuro: #3a5a40ff;
+  --verde-mais-escuro: #344e41ff;
+}

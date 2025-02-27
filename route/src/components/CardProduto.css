@@ -1,0 +1,59 @@
+
+.box__card--produto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 330px;
+    width: 250px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    border: none;
+}
+    .box__card--produto:hover{
+        transition: 0.5s;
+        height: 400px;
+        width: 300px;
+        cursor: pointer;
+        box-shadow: 0 0 8px 10px var(--verde);
+    }
+    .card__imagem{
+        height: 70%;
+        width: 100%;
+        background-color: darkcyan;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        overflow: hidden;
+        border: none;
+    }
+    .card__marca{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15%;
+        width: 100%;
+        background-color: var(--verde-escuro);
+        border: none;
+    }
+    .card__preco{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15%;
+        width: 100%;
+        background-color: var(--verde-mais-escuro);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border: none;
+    }
+
+    .imagem__tenis{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    p{
+        font-size: 15px;
+        font-weight: bolder;
+        color: #fff;
+    }

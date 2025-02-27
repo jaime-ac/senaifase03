@@ -1,0 +1,32 @@
+.produtos__container{
+    min-height: 100vh;
+    background-color: var(--verde);
+}
+
+.header__produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 60px;
+    width: 100%;
+}
+
+.cards__produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url('/public/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 60px);
+    gap: 30px;
+    padding: 20px;
+}
+
+h2{
+    text-shadow: 20px 10px 20px #000;
+}
+
