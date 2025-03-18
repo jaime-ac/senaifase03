@@ -1,5 +1,7 @@
 TESTES DE SISTEMAS - Gustavo Stangherlin Cantarelli - SENAI
 
-AULA 01_06/02/2025
+AULA 02_12/02/2025
+
+	ISO/IEC/IEEE 29119 - Teste de software => esta norma define um conjunto de padrões internacionais para se testar softwares. Ele tem como finalidade definir modelos, vocabulários e processos necessários para avaliar e acompanhar o processo de desenvolvimento de software durante o seu ciclo de vida;
 
 	

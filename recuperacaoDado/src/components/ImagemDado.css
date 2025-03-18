@@ -1,0 +1,11 @@
+.container__imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem__dado--card{
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+}
