@@ -10,10 +10,12 @@ import ImagemDado from './ImagemDado';
 
 function Main() {
 
-    const [dado, setDado] = useState(<ImagemDado />);
+    const [dado, setDado] = useState(<ImagemDado imagem='./dado-inicio.png'/>);
     const [tentativas, setTentativas] = useState(3);
-    const [total, setTotal] = useState(0);
-    const [pontos, setPontos] = useState();
+    const [total, setTotal] = useState(<ImagemDado imagem='./frase-inicio.png'/>);
+    const [pontos, setPontos] = useState(0);
+    const [resultado, setResultado] =useState('[...]');
+    const [regras, setRegras] = useState(false);
 
     const [listaDados, setListaDados] = useState([
         <GiInvertedDice1 />, 
@@ -28,13 +30,9 @@ function Main() {
 
         
         let num_tentativas = tentativas
-        let meta = total
+        let meta = pontos
 
-        let resultado = Math.floor(Math.random() * listaDados.length)
-
-        setDado(listaDados[resultado])
-
-        if (num_tentativas > 0) {
+        if (num_tentativas > 0 && meta < 20) {
             
             let resultado = Math.floor(Math.random() * listaDados.length)
     
@@ -48,18 +46,28 @@ function Main() {
             }else{
 
                 meta = (meta + resultado + 1)
-                num_tentativas = num_tentativas -2
+
+                if(num_tentativas >= 2){
+                    num_tentativas = num_tentativas -2
+                }else{
+                    num_tentativas = num_tentativas - 1
+                }
 
             }
 
         }else{
 
-            meta = 'Perdeu!'
+            if(meta >= 20){
+                setTotal(<ImagemDado imagem='./meta-batida.png'/>)
+                setResultado('[GANHOU🏆]')
+            }else{
+                setTotal(<ImagemDado imagem='./derrota.png'/>)
+                setResultado('[PERDEU😭]')
+            }
 
         };
 
         setTentativas(num_tentativas);
-        setTotal(meta);
         setPontos(meta);
 
     }
@@ -70,8 +78,14 @@ function Main() {
 
         <div className="main__top">
 
+            <div className="main__top--regras">
+                <button className="main__top--regras__botao" onClick={() => setRegras(true)}>Regras📃</button>
+            </div>
+
             <div className="main__top--card__dado">
-                {dado}
+                <div className="main__top--card__dado--imagem">
+                    {dado}
+                </div>
             </div>
             
         </div>
@@ -85,7 +99,7 @@ function Main() {
         <div className="main__bottom">
 
             <div className="main__bottom--tentativas">
-                <label htmlFor="" className='numero__tentativas'>Meta: 50 pontos</label>
+                <label htmlFor="" className='numero__tentativas'>Meta: 20 pontos</label>
                 <label htmlFor="" className='numero__tentativas'>Tentativas: {tentativas}</label>
             </div>
 
@@ -95,11 +109,29 @@ function Main() {
                     {total}
                 </div>
 
-                <label htmlFor="" className="main__bottom--mensagem">Total de pontos somados: {pontos}</label>
+                <label htmlFor="" className="main__bottom--mensagem">Pontos somados: {pontos}</label>
+                <label htmlFor="" className="main__bottom--mensagem">Resultado: {resultado}</label>
+
 
             </div>
 
         </div>
+
+        <dialog open={regras}>
+
+            <div className="dialog__container--regras">
+                <div className="dialog__container--botao">
+                    <button className="dialog__container__botao__fechar" onClick={() => setRegras(false)}>❌</button>
+                </div>
+                <div className="dialog__container--regras__texto">
+                    <h3>REGRAS BÁSICAS</h3>
+                    <label htmlFor="" className="dialog__container--regras__texto--jogo">📃Números pares: ➖2️⃣tentativas;</label>
+                    <label htmlFor="" className="dialog__container--regras__texto--jogo">📃Números ímpares: ➕1️⃣tentativas;</label>
+
+                </div>
+            </div>
+
+        </dialog>
       
     </div>
   )

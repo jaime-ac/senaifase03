@@ -1,10 +1,10 @@
 import './ImagemDado.css'
 
-function ImagemDado() {
+function ImagemDado({ imagem }) {
   return (
     <div className='container__imagem'>
 
-        <img src="./dado.png" alt="" className='imagem__dado--card'/>
+        <img src={imagem} alt="" className='imagem__dado--card'/>
       
     </div>
   )
