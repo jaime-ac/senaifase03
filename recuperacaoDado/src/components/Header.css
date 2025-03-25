@@ -2,6 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 80px;
     background-color: #FFD700;
+    gap: 5px;
+}
+
+.header__nivel--jogo{
+    height: 20px;
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
 }
